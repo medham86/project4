@@ -1,1 +1,36 @@
 
+  .angry-animate:hover{
+    transform: scale(1.05,1.05);
+    transition: ease all 0.7s;
+  }
+  .angry-animate{
+        -webkit-animation:flipinx 1s ease 0s 1 normal;
+        -moz-animation:flipinx 1s ease 0s 1 normal;
+        -ms-animation:flipinx 1s ease 0s 1 normal;
+        animation:flipinx 1s ease 0s 1 normal;
+
+        
+        
+        }
+        
+        @-webkit-keyframes flipinx {
+        0%{ opacity: 0; -webkit-transform: perspective(400px) rotateX(0deg); transform: perspective(400px) rotateX(90deg); }
+        40%{ -webkit-transform: perspective(400px) rotateX(0deg); transform: perspective(400px) rotateX(-10deg); }
+        70%{ -webkit-transform: perspective(400px) rotateX(0deg); transform: perspective(400px) rotateX(10deg); }
+        100%{ opacity: 1; -webkit-transform: perspective(400px) rotateX(0deg); transform: perspective(400px) rotateX(0deg); }
+        }
+        
+        @keyframes flipinx {
+            0%{ opacity: 0; transform: perspective(400px) rotateX(90deg); }
+            40%{ transform: perspective(400px) rotateX(-10deg); }
+            70%{ transform: perspective(400px) rotateX(10deg); }
+            100%{ opacity: 1; transform: perspective(400px) rotateX(0deg); }
+            }
+
+            
+    
+
+h2{
+    text-shadow: 2px 2px 7px #FFA25B;
+    
+}
